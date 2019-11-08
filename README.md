@@ -20,6 +20,8 @@
 - Manisha Mengani [Github link](https://github.com/Manisha-Mengani)
 - Gangadhar Yerramsetti [Github link](https://github.com/gangadhary574)
 
+## Team slides
+![Team 8](Group.PNG) 
 
 
 ## Continuous Integration with Travis Ci
