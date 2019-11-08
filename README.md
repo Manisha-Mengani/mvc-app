@@ -15,6 +15,13 @@
 - Visual Studio Code
 - VS Code Extension: ESLint
 
+## Group members:
+- Sushmita Rudra [Github link](https://github.com/Sushmita-Rudra)
+- Manisha Mengani [Github link](https://github.com/Manisha-Mengani)
+- Gangadhar Yerramsetti [Github link](https://github.com/gangadhary574)
+
+
+
 ## Continuous Integration with Travis Ci
 
 - [Get Started With Travis-CI](https://docs.travis-ci.com/user/tutorial/)
