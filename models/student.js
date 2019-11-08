@@ -2,13 +2,13 @@
 *  Developer model
 *  Describes the characteristics of each attribute in a developer resource.
 *
-* @author Denise Case <dcase@nwmissouri.edu>
+* @author Gangadhar Yerramsetti
 * @requires mongoose
 *
 */
 const mongoose = require('mongoose')
 
-const DeveloperSchema = new mongoose.Schema({
+const StudentSchema = new mongoose.Schema({
 
   _id: {
     type: Number,
@@ -35,42 +35,32 @@ const DeveloperSchema = new mongoose.Schema({
     required: false,
     default: 'Family name'
   },
-  city: {
+  gpa: {
+    type: Number,
+    required: true
+  },
+  github: {
     type: String,
-    minlength: 3,
+    minlength: 8,
     maxlength: 100,
     required: true,
-    default: 'Maryville'
+    default: 'https://github.com/'
   },
-  state: {
+  website: {
     type: String,
-    minlength: 2,
-    maxlength: 100,
-    required: true,
-    default: 'MO'
-  },
-  zip: {
-    type: String,
-    minlength: 5,
+    minlength: 8,
     maxlength: 12,
     required: true,
-    default: '64468'
+    default: 'ttps://website.com/'
   },
-  country: {
+  sectionid: {
     type: String,
     minlength: 5,
     maxlength: 100,
     required: true,
-    default: 'USA'
-  },
-  url: {
-    type: String,
-    minlength: 4,
-    maxlength: 100,
-    required: true,
-    default: 'http://yourwebsite.com'
+    
   }
 
 })
-module.exports = mongoose.model('Developer', DeveloperSchema)
+module.exports = mongoose.model('Student', StudentSchema)
 // the model Developer is for the developers collection in the database.

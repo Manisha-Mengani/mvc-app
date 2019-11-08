@@ -1,0 +1,63 @@
+[
+    {
+      "_id": 1,
+      "SectionNumber": "01",
+      "Days": "M",
+      "StartTime": 8,
+      "RoomNumber": "CH 3100",
+      "InstructorID": 1,
+      "CourseID": 1
+     
+    },
+    {
+        "_id": 2,
+        "SectionNumber": "02",
+        "Days": "T",
+        "StartTime": 10,
+        "RoomNumber": "CH 3200",
+        "InstructorID": 2,
+        "CourseID": 2
+       
+    },
+    {
+        "_id": 3,
+        "SectionNumber": "03",
+        "Days": "W",
+        "StartTime": 12,
+        "RoomNumber": "CH 3170",
+        "InstructorID": 3,
+        "CourseID": 3
+       
+      },
+      {
+          "_id": 4,
+          "SectionNumber": "04",
+          "Days": "TR",
+          "StartTime": 6,
+          "RoomNumber": "CH 2222",
+          "InstructorID": 4,
+          "CourseID": 4
+         
+      },
+      {
+        "_id": 5,
+        "SectionNumber": "05",
+        "Days": "F",
+        "StartTime": 7,
+        "RoomNumber": "CH 3180",
+        "InstructorID": 5,
+        "CourseID": 5
+       
+      },
+      {
+          "_id": 6,
+          "SectionNumber": "06",
+          "Days": "M",
+          "StartTime": 9,
+          "RoomNumber": "CH 3322",
+          "InstructorID": 6,
+          "CourseID": 6
+         
+      }
+  ]
+  

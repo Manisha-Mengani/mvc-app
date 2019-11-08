@@ -1,0 +1,64 @@
+[
+    {
+      "_id": 537360,
+      "email": "MManisha@nwmissouri.edu",
+      "given": "Manisha",
+      "family": "Mengani",
+      "gpa": 4,
+      "github": "https://github.com/",
+      "website": "https://group8.com/",
+      "sectionid": 1
+     
+    },
+    {
+        "_id": 537361,
+        "email": "SRudra@nwmissouri.edu",
+        "given": "Sushmita",
+        "family": "Rudra",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://group8.com/",
+        "sectionid": 2
+    },
+    {
+        "_id": 537362,
+        "email": "YGanga@nwmissouri.edu",
+        "given": "Gangadhar",
+        "family": "Yerramsetti",
+        "gpa": 3,
+        "github": "https://github.com/",
+        "website": "https://group8.com/",
+        "sectionid": 2
+    },
+    {
+        "_id": 537363,
+        "email": "RRudra@nwmissouri.edu",
+        "given": "Rohit",
+        "family": "Rudra",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://group8.com/",
+        "sectionid": 2
+    },
+    {
+        "_id": 537364,
+        "email": "KPallavi@nwmissouri.edu",
+        "given": "Pallavi",
+        "family": "Karlapaka",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://group8.com/",
+        "sectionid": 4
+    },
+    {
+        "_id": 537365,
+        "email": "MAnusha@nwmissouri.edu",
+        "given": "Anusha",
+        "family": "Mengani",
+        "gpa": 3,
+        "github": "https://github.com/",
+        "website": "https://group8.com/",
+        "sectionid": 3
+    }
+  ]
+  

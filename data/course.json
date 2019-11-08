@@ -1,0 +1,59 @@
+[
+    {
+      "_id": 1,
+      "schoolnumber": "01",
+      "coursenumber": "111",
+      "name": "Maths",
+      "inspring": true,
+      "insummer": true,
+      "infall": false
+     
+    
+    },
+    {
+        "_id": 2,
+        "schoolnumber": "01",
+        "coursenumber": "112",
+        "name": "Science",
+        "inspring": true,
+        "insummer": true,
+        "infall": false
+    },
+    {
+        "_id": 3,
+        "schoolnumber": "01",
+        "coursenumber": "113",
+        "name": "Social",
+        "inspring": true,
+        "insummer": false,
+        "infall": true
+    },
+    {
+        "_id": 4,
+      "schoolnumber": "01",
+      "coursenumber": "114",
+      "name": "General Knowledge",
+      "inspring": true,
+      "insummer": true,
+      "infall": false
+    },
+    {
+        "_id": 5,
+      "schoolnumber": "01",
+      "coursenumber": "115",
+      "name": "Biology",
+      "inspring": true,
+      "insummer": false,
+      "infall": true
+    },
+    {
+        "_id": 6,
+        "schoolnumber": "01",
+        "coursenumber": "116",
+        "name": "Chemistry",
+        "inspring": true,
+        "insummer": true,
+        "infall": true
+    }
+  ]
+  

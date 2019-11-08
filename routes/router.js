@@ -22,6 +22,12 @@ router.get('/index', (req, res, next) => {
 
 // Route requests that start with '/dev' to a particular controller
 router.use('/developer', require('../controllers/developer.js'))
+router.use('/student', require('../controllers/student.js'))
+router.use('/instructor', require('../controllers/instructor.js'))
+router.use('/section', require('../controllers/section.js'))
+router.use('/course', require('../controllers/course.js'))
+
+
 
 // catch 404 and forward to error handler
 router.use((req, res, next) => {
