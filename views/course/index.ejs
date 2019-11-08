@@ -1,0 +1,43 @@
+<br>
+<br>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="course/create" class="btn btn-primary new">
+        Create a new course
+      </a>
+
+      <h2>Recent entries</h2>
+      <p>There are
+        <%= courses.length %> courses.
+        <br>
+      </p>
+      <% for (let i = courses.length-1; i >= 0; i--) {   
+        course = courses[i];   %>
+
+      <div class="panel panel-default">
+        <div class="panel-heading"></div>
+        <div class="text-muted pull-right"></div>
+        <div class="panel-body">
+
+            <br> ID: <%=  course._id %>
+            <br> schoolnumber: <%=course.schoolnumber%>
+            <br> coursenumber: <%=course.coursenumber%>
+            <br> name: <%=course.name%>
+            <br> inspring: <%=course.inspring %>
+            <br> insummer: <%=course.insummer %>
+            <br> infall: <%=course.infall %>
+
+          <hr>
+          <a href="/course/delete/<%= course._id  %>" class="btn btn-danger"> Delete </a>
+          <a href="/course/details/<%= course._id %>" class="btn btn-info"> Details </a>
+          <a href="/course/edit/<%= course._id %>" class="btn btn-primary"> Edit </a>
+          <hr>
+          <hr>
+        </div>
+      </div>
+      <% } %>
+
+    </div>
+  </div>
+</div>

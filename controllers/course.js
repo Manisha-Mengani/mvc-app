@@ -7,7 +7,7 @@
 */
 const express = require('express')
 const api = express.Router()
-const Model = require('../models/course.js')
+const CourseSchema = require('../models/course.js')
 
 const find = require('lodash.find')
 const notfoundstring = 'Could not find student with id='
@@ -34,86 +34,85 @@ api.get('/findone/:id', (req, res) => {
 // RESPOND WITH VIEWS  --------------------------------------------
 
 // GET to this controller base URI (the default)
-// api.get('/', (req, res) => {
-//   res.render('developer/index.ejs', {
-//     developers: req.app.locals.students.query
-//   })
-// })
+api.get('/', (req, res) => {
+  res.render('course/index.ejs', {
+    courses: req.app.locals.courses.query
+  })
+})
 
-// // GET create
-// api.get('/create', (req, res) => {
-//   res.render('developer/create', {
-//     developers: req.app.locals.students.query,
-//     developer: new Model()
-//   })
-// })
+// GET create
+api.get('/create', (req, res) => {
+  res.render('course/create', {
+    courses: req.app.locals.courses.query,
+    course: new CourseSchema()
+  })
+})
 
-// // GET /delete/:id
-// api.get('/delete/:id', (req, res) => {
-//   const id = parseInt(req.params.id)
-//   const data = req.app.locals.students.query
-//   const item = find(data, { _id: id })
-//   if (!item) { return res.end(notfoundstring + id) }
-//   res.render('developer/delete', {
-//     developer: item
-//   })
-// })
+// GET /delete/:id
+api.get('/delete/:id', (req, res) => {
+  const id = parseInt(req.params.id)
+  const data = req.app.locals.courses.query
+  const item = find(data, { _id: id })
+  if (!item) { return res.end(notfoundstring + id) }
+  res.render('course/delete', {
+    course: item
+  })
+})
 
-// // GET /details/:id
-// api.get('/details/:id', (req, res) => {
-//   const id = parseInt(req.params.id)
-//   const data = req.app.locals.students.query
-//   const item = find(data, { _id: id })
-//   if (!item) { return res.end(notfoundstring + id) }
-//   res.render('developer/details', {
-//     developer: item
-//   })
-// })
+// GET /details/:id
+api.get('/details/:id', (req, res) => {
+  const id = parseInt(req.params.id)
+  const data = req.app.locals.courses.query
+  const item = find(data, { _id: id })
+  if (!item) { return res.end(notfoundstring + id) }
+  res.render('course/details', {
+    course: item
+  })
+})
 
-// // GET one
-// api.get('/edit/:id', (req, res) => {
-//   const id = parseInt(req.params.id)
-//   const data = req.app.locals.students.query
-//   const item = find(data, { _id: id })
-//   if (!item) { return res.end(notfoundstring + id) }
-//   res.render('developer/edit', {
-//     developer: item
-//   })
-// })
+// GET one
+api.get('/edit/:id', (req, res) => {
+  const id = parseInt(req.params.id)
+  const data = req.app.locals.courses.query
+  const item = find(data, { _id: id })
+  if (!item) { return res.end(notfoundstring + id) }
+  res.render('course/edit', {
+    course: item
+  })
+})
 
-// // HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
+// HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
 
-// // POST new
-// api.post('/save', (req, res) => {
-//   console.info(`Handling POST ${req}`)
-//   console.debug(JSON.stringify(req.body))
-//   const item = new Model()
-//   console.info(`NEW ID ${req.body._id}`)
-//   item._id = parseInt(req.body._id)
-//   item.email = req.body.email
-//   item.given = req.body.given
-//   item.family = req.body.family
-//   item.city = req.body.city
-//   item.state = req.body.state
-//   item.zip = req.body.zip
-//   item.country = req.body.country
-//   res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
-// })
+// POST new
+api.post('/save', (req, res) => {
+  console.info(`Handling POST ${req}`)
+  console.debug(JSON.stringify(req.body))
+  const item = new CourseSchema()
+  console.info(`NEW ID ${req.body._id}`)
+  item._id = parseInt(req.body._id)
+  item.schoolnumber = req.body.schoolnumber
+  item.coursenumber = req.body.coursenumber
+  item.name = req.body.name
+  item.inspring = req.body.inspring
+  item.insummer = req.body.insummer
+  item.infall = req.body.infall
+  res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
+})
 
-// // POST update with id
-// api.post('/save/:id', (req, res) => {
-//   console.info(`Handling SAVE request ${req}`)
-//   const id = parseInt(req.params.id)
-//   console.info(`Handling SAVING ID=${id}`)
-//   res.send(`THIS FUNCTION WILL SAVE CHANGES TO AN EXISTING developer with id=${id}`)
-// })
+// POST update with id
+api.post('/save/:id', (req, res) => {
+  console.info(`Handling SAVE request ${req}`)
+  const id = parseInt(req.params.id)
+  console.info(`Handling SAVING ID=${id}`)
+  res.send(`THIS FUNCTION WILL SAVE CHANGES TO AN EXISTING developer with id=${id}`)
+})
 
-// // DELETE id (uses HTML5 form method POST)
-// api.post('/delete/:id', (req, res) => {
-//   console.info(`Handling DELETE request ${req}`)
-//   const id = parseInt(req.params.id)
-//   console.info(`Handling REMOVING ID=${id}`)
-//   res.send(`THIS FUNCTION WILL DELETE FOREVER THE EXISTING developer with id=${id}`)
-// })
+// DELETE id (uses HTML5 form method POST)
+api.post('/delete/:id', (req, res) => {
+  console.info(`Handling DELETE request ${req}`)
+  const id = parseInt(req.params.id)
+  console.info(`Handling REMOVING ID=${id}`)
+  res.send(`THIS FUNCTION WILL DELETE FOREVER THE EXISTING developer with id=${id}`)
+})
 
 module.exports = api
