@@ -1,0 +1,25 @@
+<br>
+<br>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+
+      <h2>Details</h2>
+      <br>
+      <br> ID: <%=  section._id %>
+      <br> sectionNo: <%=section.SectionNumber%>
+      <br> Days: <%=section.Days%>
+      <br> startTime: <%=section.StartTime%>
+      <br> RoomNumber: <%=section.RoomNumber %>
+      <br> InstructorID: <%=section.InstructorID %>
+      <br> courseID: <%=section.CourseID %>
+      
+      <hr>
+
+      <form method="get" action="/section">
+        <input type="submit" value="Return to list" class="btn btn-caution" />
+      </form>
+
+    </div>
+  </div>
+</div>
