@@ -81,7 +81,7 @@ api.post('/save', (req, res) => {
   console.debug(JSON.stringify(req.body))
   const item = new StudentSchema()
   console.info(`NEW ID ${req.body._id}`)
-  item._id = eq.body._id
+  item._id = req.body._id
   item.Given = req.body.Given
   item.Family = req.body.Family
   item.Email = req.body.Email

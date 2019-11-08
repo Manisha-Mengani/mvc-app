@@ -1,0 +1,30 @@
+<br>
+<br>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+
+      <h2>Confirm deletion of student</h2>
+      <br>
+      <br> ID: <%=  student._id %>
+      <br> Email: <%=student.given%>
+      <br> Given: <%=student.family%>
+      <br> Family: <%=student.email%>
+      <br> City: <%=student.gpa %>
+      <br> GitHub: <%=student.github %>
+      <br> Website: <%=student.website %>
+      <br> SectionID: <%=student.sectionid %>
+      <hr>
+      
+      <form method="get" action="/student">
+        <input type="submit" value="Return to list" class="btn btn-caution" />
+      </form>
+
+
+      <form method="POST" action="/student/delete/<%= student._id %>">
+        <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -12,14 +12,14 @@ module.exports = (app) => {
 
   db.developers = new Datastore() // new object property
   db.developers.loadDatabase() // call the loadDatabase method
-  db.students = new Datastore()
+  db.student = new Datastore()
   db.courses=new Datastore()
   db.instructors=new Datastore()
   db.sections=new Datastore()
   
   // insert the sample data into our datastore
   db.developers.insert(developerData)
-  db.students.insert(StudentData)
+  db.student.insert(StudentData)
   db.courses=new Datastore()
   db.instructors.insert(instructorData)
   db.sections.insert(sectionData)
@@ -29,7 +29,7 @@ module.exports = (app) => {
 
   // initialize app.locals (these objects are available to the controllers)
   app.locals.developers = db.developers.find(developerData)
-  app.locals.students = db.students.find(StudentData)
+  app.locals.student = db.student.find(StudentData)
   app.locals.courses = db.courses.find(courseData)
   app.locals.instructors = db.instructors.find(instructorData)
   app.locals.sections = db.sections.find(sectionData)
@@ -38,7 +38,7 @@ module.exports = (app) => {
 
 
   console.log(`${app.locals.developers.query.length} developers seeded`)
-  console.log(`${app.locals.students.query.length} students seeded`)
+  console.log(`${app.locals.student.query.length} students seeded`)
   console.log(`${app.locals.courses.query.length} courses seeded`)
   console.log(`${app.locals.instructors.query.length} instructors seeded`)
   console.log(`${app.locals.sections.query.length} sections seeded`)
