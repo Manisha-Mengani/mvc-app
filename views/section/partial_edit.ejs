@@ -1,0 +1,52 @@
+<!-- main - a row holds columns -->
+<div class=row>
+                <div class="col col-xs-12">
+              
+                  
+                  <div class="form-group">
+                    <label for="SectionNumber">SectionNumber</label>
+                    <input type="number" class="form-control" id="SectionNumber" name="SectionNumber" value="<%= section.SectionNumber %>">
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="Days">Days</label>
+                    <input type="text" class="form-control" id="Days" name="Days" value="<%= section.Days %>">
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="StartTime">StartTime   </label>
+                    <input type="number" class="form-control" id="StartTime" name="StartTime" value="<%= section.StartTime  %>">
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="RoomNumber">RoomNumber </label>
+                    <input type="text" class="form-control" id="RoomNumber" name="RoomNumber" value="<%= section.RoomNumber %>">
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="InstructorID">InstructorID </label>
+                    <input type="number" class="form-control" id="InstructorID" name="InstructorID" value="<%= section.InstructorID %>">
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="CourseID">CourseID </label>
+                    <input type="number" class="form-control" id="CourseID" name="CourseID" value="<%= section.CourseID  %>">
+                  </div>
+              
+                </div>
+              </div>
+              
+              
+              <!-- PUT CLIENT SIDE CODE HERE -->
+              <script>
+               
+                // prevent submission when hitting enter key - optional, but user-friendly 
+                document.forms[0].onkeypress = function (e) {
+                  var key = e.charCode || e.keyCode || 0;
+                  if (key == 13) {
+                    e.preventDefault();
+                  }
+                }
+              
+              // END CLIENT SIDE CODE  (close the script tag)
+              </script>
