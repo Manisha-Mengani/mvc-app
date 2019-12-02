@@ -25,15 +25,13 @@ const StudentSchema = new mongoose.Schema({
     type: String,
     minlength: 3,
     maxlength: 100,
-    required: false,
-    default: 'Given name'
+    required: true
   },
   family: {
     type: String,
     minlength: 3,
     maxlength: 100,
-    required: false,
-    default: 'Family name'
+    required: true
   },
   gpa: {
     type: Number,
@@ -49,13 +47,13 @@ const StudentSchema = new mongoose.Schema({
   website: {
     type: String,
     minlength: 8,
-    maxlength: 12,
+    maxlength: 20,
     required: true,
     default: 'ttps://website.com/'
   },
   sectionid: {
     type: String,
-    minlength: 5,
+    minlength: 1,
     maxlength: 100,
     required: true,
     

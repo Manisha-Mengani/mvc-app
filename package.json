@@ -5,20 +5,23 @@
   "author": "Denise Case",
   "dependencies": {
     "body-parser": "latest",
-    "cookie-parser": "latest",
-    "debug": "latest",
-    "ejs": "latest",
     "config": "latest",
     "consolidate": "latest",
+    "cookie-parser": "latest",
+    "debug": "latest",
+    "dotenv": "^8.2.0",
+    "ejs": "latest",
+    "errorhandler": "^1.5.1",
     "express": "latest",
     "express-ejs-layouts": "latest",
     "helmet": "latest",
     "lodash": "latest",
     "lodash.find": "latest",
     "mongoose": "latest",
-    "nedb": "latest",
     "morgan": "latest",
-    "serve-favicon": "latest"
+    "nedb": "latest",
+    "serve-favicon": "latest",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "latest",

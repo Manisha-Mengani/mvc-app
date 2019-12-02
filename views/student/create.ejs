@@ -8,13 +8,13 @@
       <br>
       <% 
       maxID=0; 
-      for (var i=0; i < student.length; i++) {
-        if(student[i]._id > maxID) { 
-          maxID=student[i]._id;  
+      for (var i=0; i < students.length; i++) {
+        if(students[i]._id > maxID) { 
+          maxID=students[i]._id;  
         }
       }
-      const students = {}
-      students._id = maxID+1
+      const student = {}
+      student._id = maxID+1
      
       %>
       <div class="content">
@@ -34,7 +34,7 @@
             </div>
           </form>
 
-          <form method="get" action="/developer">
+          <form method="get" action="/student">
             <input type="submit" value="Return to list" class="btn btn-caution" />
           </form>
 

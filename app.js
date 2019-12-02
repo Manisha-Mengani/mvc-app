@@ -6,55 +6,152 @@
  *
  * The server-side app starts and begins listening for events.
  *
- *  @requires config
- *  @requires express
  **/
-const config = require('config')
-const express = require('express')
-const path = require('path')
-const logger = require('morgan')
-const helmet = require('helmet')
-const bodyParser = require('body-parser')
-const cookieParser = require('cookie-parser')
-const engines = require('consolidate')
-const expressLayouts = require('express-ejs-layouts')
-const app = express() // create an Express web app
 
-// Use hosting values if available, otherwise default
-const environment = process.env.NODE_ENV || 'development'
-const hostname = process.env.HOSTNAME || config.get('hostname')
-const port = process.env.PORT || config.get('port')
+ // Module dependencies
+ const express = require('express')
+ const expressLayouts = require('express-ejs-layouts')
+ const favicon = require('serve-favicon')
+ const path = require('path')
+ const bodyParser = require('body-parser')
+ const engines = require('consolidate')
+ const errorHandler = require('errorhandler')
+ const chalk = require('chalk')
+ const dotenv = require('dotenv')
+ const mongoose = require('mongoose')
+ const LOG = require('./utils/logger.js')
 
-// By default, Express does not serve static files.
-// use middleware to define a static assets folder 'public'
-app.use(express.static('public'))
+// create express app
+const app = express()
 
-// Helmet helps you secure Express apps by setting various HTTP headers.
-// It's not a silver bullet, but it can help!
-// https://github.com/helmetjs/helmet
-app.use(helmet())
+// Load environment variables from .env file, where port, API keys, and passwords are configured.
+// dotenv.load is depricated in dotenv version>6.4.1
+// to check dotenv version in your machine use command "npm dotenv -version"
+// If your version is 6.4.1 or below use dotenv.load
+// If your version is greater than 6.4.1 use dotenv.config as shown below
+dotenv.config({ path: '.env' })
+LOG.info('Environment variables loaded into process.env.')
 
-// view engine setup
+// log port (Heroku issue)
+const port = process.env.PORT || 8089
+LOG.info(`Running on ${port}`)
+
+// Are we in production or development?
+const isProduction = process.env.NODE_ENV === 'production'
+LOG.info(`Environment isProduction = ${isProduction}`)
+
+// choose the connection
+const dbURI = isProduction ? encodeURI(process.env.ATLAS_URI) : encodeURI(process.env.LOCAL_MONGODB_URI)
+LOG.info('MongoDB URL = ' + dbURI)
+
+// get dbName
+const DB_NAME = process.env.DB_NAME
+
+// set connection options
+const connectionOptions = {
+  dbName: DB_NAME,
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+  autoIndex: false, // Don't build indexes
+  reconnectTries: Number.MAX_VALUE, // Never stop trying to reconnect
+  reconnectInterval: 500, // Reconnect every 500ms
+  poolSize: 10, // Maintain up to 10 socket connections
+  // If not connected, return errors immediately rather than waiting for reconnect
+  bufferMaxEntries: 0,
+  connectTimeoutMS: 10000, // Give up initial connection after 10 seconds
+  socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
+  family: 4 // Use IPv4, skip trying IPv6
+}
+
+// use mongoose to connect & create a default connection
+const db = mongoose.connect(dbURI, connectionOptions, (err, client) => {
+  if (!err) { console.log('MongoDB connection succeeded.') } else { console.log('Error in MongoDB connection : ' + JSON.stringify(err, undefined, 2)) }
+})
+
+// Get the default connection
+const connection = mongoose.connection
+
+function seed (collectionName) {
+  LOG.info(`Seeding collection = ${collectionName}`)
+  connection.db.collection(collectionName, (err, c) => {
+    c.countDocuments((err, count) => {
+      if (!err && count === 0) { 
+        c.insertMany(require('./data/' + collectionName + '.json')) 
+      }
+    })
+    c.find({}).toArray((err, data) => {
+      // console.log(data)
+    })
+  })
+}
+
+// Mongoose connections emit events
+connection.once('open', function () {
+  LOG.info('MongoDB event open')
+  LOG.info(`MongoDB connected ${dbURI}\n`)
+
+  seed('developers')
+  seed('courses')
+  seed('instructors')
+  seed('sections')
+  seed('students')
+
+  connection.on('connected', function () {
+    LOG.info('MongoDB event connected')
+  })
+  connection.on('disconnected', function () {
+    LOG.warn('MongoDB event disconnected')
+  })
+  connection.on('reconnected', function () {
+    LOG.info('MongoDB event reconnected')
+  })
+  connection.on('error', function (err) {
+    LOG.error('%s MongoDB error: %s', chalk.red('✗'), err)
+    process.exit(1)
+  })
+})
+
+// configure app.settings.............................
+app.set('host', process.env.HOST)
+
+// set the root view folder
 app.set('views', path.join(__dirname, 'views'))
+
+// specify desired view engine (EJS)
 app.set('view engine', 'ejs')
 app.engine('ejs', engines.ejs)
 
-app.use(logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use(cookieParser())
+// configure middleware.....................................................
+// app.use(favicon(path.join(__dirname, '/public/images/favicon.ico')))
+
+// log every call and pass it on for handling
+app.use((req, res, next) => {
+  LOG.debug(`${req.method} ${req.url}`)
+  next()
+})
+
+// specify various resources and apply them to our application
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 app.use(expressLayouts)
+app.use(errorHandler()) // load error handler
 
-// load seed data
-require('./utils/seeder.js')(app)
+const routes = require('./routes/router.js')
+app.use('/', routes) // load routing to handle all requests
+LOG.info('Loaded routing.')
 
-// Use Express middleware to configure routing
-const routing = require('./routes/router.js')
-app.use('/', routing)
+app.use((req, res) => { res.status(404).render('404.ejs') }) // handle page not found errors
 
-app.listen(port, hostname, () => {
-  console.log(`App running at http://${hostname}:${port}/ in ${environment}`)
-  console.log('Hit CTRL-C CTRL-C to stop\n')
+// call app.listen to start server
+const host = app.get('host')
+const env = app.get('env')
+
+app.listen(process.env.PORT || 8089, () => {
+  console.log(`\nApp running at http://${host}:${port}/ in ${env} mode`)
+  console.log('Press CTRL-C to stop\n')
 })
+
+module.exports = app
