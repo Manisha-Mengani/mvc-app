@@ -645,3 +645,30 @@
 {"message":"Seeding collection = students","level":"info"}
 {"message":"GET /","level":"debug"}
 {"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":3004},"level":"error","message":"uncaughtException: listen EADDRINUSE: address already in use :::3004\nError: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","stack":"Error: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Dec 03 2019 18:21:37 GMT-0600 (Central Standard Time)","process":{"pid":17196,"uid":null,"gid":null,"cwd":"C:\\Users\\S537360\\Desktop\\project\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.9.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js"],"memoryUsage":{"rss":52981760,"heapTotal":31711232,"heapUsed":22105880,"external":20121595}},"os":{"loadavg":[0,0,0],"uptime":75110},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1228,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1276,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1364,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js","function":null,"line":152,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":936,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":947,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":790,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":703,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":999,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}]}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
