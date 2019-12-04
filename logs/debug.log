@@ -224,3 +224,409 @@
 {"message":"GET /images/manifest.json","level":"debug"}
 {"message":"GET /","level":"debug"}
 {"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":3004},"level":"error","message":"uncaughtException: listen EADDRINUSE: address already in use :::3004\nError: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","stack":"Error: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Dec 03 2019 16:44:47 GMT-0600 (Central Standard Time)","process":{"pid":15080,"uid":null,"gid":null,"cwd":"C:\\Users\\S537360\\Desktop\\project\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.9.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js"],"memoryUsage":{"rss":53051392,"heapTotal":31973376,"heapUsed":21895376,"external":20108656}},"os":{"loadavg":[0,0,0],"uptime":69300},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1228,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1276,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1364,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js","function":null,"line":152,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":936,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":947,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":790,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":703,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":999,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}]}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":3004},"level":"error","message":"uncaughtException: listen EADDRINUSE: address already in use :::3004\nError: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","stack":"Error: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Dec 03 2019 16:45:16 GMT-0600 (Central Standard Time)","process":{"pid":10700,"uid":null,"gid":null,"cwd":"C:\\Users\\S537360\\Desktop\\project\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.9.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js"],"memoryUsage":{"rss":53243904,"heapTotal":31973376,"heapUsed":22030104,"external":20108656}},"os":{"loadavg":[0,0,0],"uptime":69328},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1228,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1276,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1364,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js","function":null,"line":152,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":936,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":947,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":790,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":703,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":999,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}]}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":3004},"level":"error","message":"uncaughtException: listen EADDRINUSE: address already in use :::3004\nError: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","stack":"Error: listen EADDRINUSE: address already in use :::3004\n    at Server.setupListenHandle [as _listen2] (net.js:1228:14)\n    at listenInCluster (net.js:1276:12)\n    at Server.listen (net.js:1364:7)\n    at Function.listen (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js:152:5)\n    at Module._compile (internal/modules/cjs/loader.js:936:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)\n    at Module.load (internal/modules/cjs/loader.js:790:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:703:12)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Dec 03 2019 16:45:41 GMT-0600 (Central Standard Time)","process":{"pid":13132,"uid":null,"gid":null,"cwd":"C:\\Users\\S537360\\Desktop\\project\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.9.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js"],"memoryUsage":{"rss":53321728,"heapTotal":31973376,"heapUsed":22078336,"external":20121228}},"os":{"loadavg":[0,0,0],"uptime":69353},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1228,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1276,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1364,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\S537360\\Desktop\\project\\mvc-app\\app.js","function":null,"line":152,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":936,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":947,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":790,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":703,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":999,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}]}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/6","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":6,\"SectionNumber\":\"06\",\"Days\":\"M\",\"StartTime\":9,\"RoomNumber\":\"CH 3322\",\"InstructorID\":6,\"CourseID\":6}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/6","level":"debug"}
+{"message":"POST /developer/delete/6","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/6","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":6,\"SectionNumber\":\"06\",\"Days\":\"M\",\"StartTime\":9,\"RoomNumber\":\"CH 3322\",\"InstructorID\":6,\"CourseID\":6}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/6","level":"debug"}
+{"message":"POST /developer/delete/6","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/6","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":6,\"SectionNumber\":\"06\",\"Days\":\"M\",\"StartTime\":9,\"RoomNumber\":\"CH 3322\",\"InstructorID\":6,\"CourseID\":6}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/6","level":"debug"}
+{"message":"POST /developer/delete/6","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/5","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":5,\"SectionNumber\":\"05\",\"Days\":\"F\",\"StartTime\":7,\"RoomNumber\":\"CH 3180\",\"InstructorID\":5,\"CourseID\":5}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/5","level":"debug"}
+{"message":"POST /developer/delete/5","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/6","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":6,\"SectionNumber\":\"06\",\"Days\":\"M\",\"StartTime\":9,\"RoomNumber\":\"CH 3322\",\"InstructorID\":6,\"CourseID\":6}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/6","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/1","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":1,\"SectionNumber\":\"01\",\"Days\":\"M\",\"StartTime\":8,\"RoomNumber\":\"CH 3100\",\"InstructorID\":1,\"CourseID\":1}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/1","level":"debug"}
+{"message":"POST /developer/delete/1","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/edit/1","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR[{\"_id\":1,\"SectionNumber\":\"01\",\"Days\":\"M\",\"StartTime\":8,\"RoomNumber\":\"CH 3100\",\"InstructorID\":1,\"CourseID\":1}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /section/save/1","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=1","level":"info"}
+{"message":"ORIGINAL VALUES {\"n\":1,\"nModified\":0,\"opTime\":{\"ts\":\"6766365493289811969\",\"t\":4},\"electionId\":\"7fffffff0000000000000004\",\"ok\":1,\"operationTime\":\"6766365493289811969\",\"$clusterTime\":{\"clusterTime\":\"6766365493289811969\",\"signature\":{\"hash\":\"lIoYT1eI/hPyOHGK7lYs0N7kGlw=\",\"keyId\":\"6758691052451790849\"}}}","level":"info"}
+{"message":"UPDATED VALUES: {\"SectionNumber\":\"01\",\"Days\":\"M\",\"StartTime\":\"8\",\"RoomNumber\":\"CH 3100\",\"InstructorID\":\"1\",\"CourseID\":\"11\"}","level":"info"}
+{"message":"SAVING UPDATED item {\"n\":1,\"nModified\":0,\"opTime\":{\"ts\":\"6766365493289811969\",\"t\":4},\"electionId\":\"7fffffff0000000000000004\",\"ok\":1,\"operationTime\":\"6766365493289811969\",\"$clusterTime\":{\"clusterTime\":\"6766365493289811969\",\"signature\":{\"hash\":\"lIoYT1eI/hPyOHGK7lYs0N7kGlw=\",\"keyId\":\"6758691052451790849\"}}}","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/details/6","level":"debug"}
+{"message":"Handling GET /details/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":6,\"SectionNumber\":\"06\",\"Days\":\"M\",\"StartTime\":9,\"RoomNumber\":\"CH 3322\",\"InstructorID\":6,\"CourseID\":6}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}

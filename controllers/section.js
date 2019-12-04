@@ -1,5 +1,5 @@
 /**
-*  Developer controller
+*  section controller
 *  Handles requests related to developer resources.
 *
 * @author Manisha Mengani
@@ -8,8 +8,8 @@
 
 const express = require('express')
 const api = express.Router()
-const CourseModel = require('../models/course.js')
 const SectionSchema = require('../models/section.js')
+const CourseModal = require('../models/course.js')
 const find = require('lodash.find')
 const LOG = require('../utils/logger.js')
 const notfoundstring = 'Could not find section with id='
@@ -97,12 +97,13 @@ api.get('/edit/:id', (req, res) => {
 // HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
 
 // POST new
+
 api.post('/save', (req, res) => {
   
   LOG.info(`Handling POST ${req}`)
   LOG.debug(JSON.stringify(req.body))
 
-  CourseModel.findOne({ _id: req.body.courseId }, (err, results) => {
+  CourseModal.findOne({ _id: req.body.CourseID }, (err, results) => {
     if (err || !results) {
       console.log(results);
       return res.end(`Invalid course is available with given ID: ${req.body.courseId}`)
@@ -110,12 +111,12 @@ api.post('/save', (req, res) => {
       const item = new SectionSchema()
       LOG.info(`NEW ID ${req.body._id}`)
       item._id = parseInt(req.body._id)
-      item.sectionNumber = req.body.sectionNumber
-      item.days = req.body.days
-      item.startTime = req.body.startTime
-      item.roomNumber = req.body.roomNumber
-      item.instructorId = req.body.instructorId
-      item.courseId = req.body.courseId
+      item.SectionNumber = req.body.SectionNumber
+      item.Days = req.body.Days
+      item.StartTime = req.body.StartTime
+      item.RoomNumber = req.body.RoomNumber
+      item.InstructorID = req.body.InstructorID
+      item.CourseID = req.body.CourseID
       item.save((err) => {
         if (err) { 
           console.log(err);
@@ -138,12 +139,12 @@ api.post('/save/:id', (req, res) => {
   SectionSchema.updateOne({ _id: id },
     { // use mongoose field update operator $set
       $set: {
-        sectionNumber: req.body.sectionNumber,
-        days: req.body.days,
-        startTime: req.body.startTime,
-        roomNumber: req.body.roomNumber,
-        instructorId: req.body.instructorId,
-        courseId: req.body.courseId
+        SectionNumber: req.body.SectionNumber,
+        Days: req.body.Days,
+        StartTime: req.body.StartTime,
+        RoomNumber: req.body.RoomNumber,
+        InstructorId: req.body.InstructorID,
+        CourseId: req.body.CourseID
       }
     },
     (err, item) => {
