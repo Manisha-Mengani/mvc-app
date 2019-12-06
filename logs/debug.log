@@ -672,3 +672,223 @@
 {"message":"Seeding collection = students","level":"info"}
 {"message":"GET /","level":"debug"}
 {"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /course","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course/details/6","level":"debug"}
+{"message":"Handling GET /details/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"coursenumber\":\"116\",\"name\":\"Chemistry\",\"_id\":6,\"schoolnumber\":\"01\",\"inspring\":true,\"insummer\":true,\"infall\":true}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /course/save","level":"debug"}
+{"message":"GET /favicon.ico","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /course/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /course/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /course/save","level":"debug"}
+{"message":"SAVING NEW item {\"coursenumber\":\"115\",\"name\":\"Course115\",\"_id\":7,\"schoolnumber\":\"01\",\"inspring\":false,\"insummer\":false,\"infall\":false,\"__v\":0}","level":"info"}
+{"message":"GET /course","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"coursenumber\":\"115\",\"name\":\"Course115\",\"_id\":7,\"schoolnumber\":\"01\",\"inspring\":false,\"insummer\":false,\"infall\":false,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /course/delete/7","level":"debug"}
+{"message":"Handling DELETE request [object Object]","level":"info"}
+{"message":"Handling REMOVING ID=7","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"coursenumber\":\"115\",\"name\":\"Course115\",\"_id\":7,\"schoolnumber\":\"01\",\"inspring\":false,\"insummer\":false,\"infall\":false,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course?","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"coursenumber\":\"115\",\"name\":\"Course115\",\"_id\":7,\"schoolnumber\":\"01\",\"inspring\":false,\"insummer\":false,\"infall\":false,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /course/delete/7","level":"debug"}
+{"message":"Handling DELETE request [object Object]","level":"info"}
+{"message":"Handling REMOVING ID=7","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /course/edit/7","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR[{\"coursenumber\":\"115\",\"name\":\"Course115\",\"_id\":7,\"schoolnumber\":\"01\",\"inspring\":false,\"insummer\":false,\"infall\":false,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /section/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{\"_id\":\"7\",\"SectionNumber\":\"07\",\"Days\":\"MWF\",\"StartTime\":\"9\",\"RoomNumber\":\"1001\",\"InstructorID\":\"7\",\"CourseID\":\"7\"}","level":"debug"}
+{"message":"NEW ID 7","level":"info"}
+{"message":"SAVING NEW item {\"_id\":7,\"SectionNumber\":\"07\",\"Days\":\"MWF\",\"StartTime\":9,\"RoomNumber\":\"1001\",\"InstructorID\":7,\"CourseID\":7,\"__v\":0}","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":7,\"SectionNumber\":\"07\",\"Days\":\"MWF\",\"StartTime\":9,\"RoomNumber\":\"1001\",\"InstructorID\":7,\"CourseID\":7,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/7","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":7,\"SectionNumber\":\"07\",\"Days\":\"MWF\",\"StartTime\":9,\"RoomNumber\":\"1001\",\"InstructorID\":7,\"CourseID\":7,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/7","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/7","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":7,\"SectionNumber\":\"07\",\"Days\":\"MWF\",\"StartTime\":9,\"RoomNumber\":\"1001\",\"InstructorID\":7,\"CourseID\":7,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /developer/delete/7","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://user1:Abhibus_55@cluster0-yvqkb.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = developers","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /section/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":7,\"SectionNumber\":\"07\",\"Days\":\"MWF\",\"StartTime\":9,\"RoomNumber\":\"1001\",\"InstructorID\":7,\"CourseID\":7,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /section/delete/7","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR [{\"_id\":7,\"SectionNumber\":\"07\",\"Days\":\"MWF\",\"StartTime\":9,\"RoomNumber\":\"1001\",\"InstructorID\":7,\"CourseID\":7,\"__v\":0}]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /section/delete/7","level":"debug"}
+{"message":"Handling DELETE request [object Object]","level":"info"}
+{"message":"Handling REMOVING ID=7","level":"info"}
+{"message":"GET /section","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /images/manifest.json","level":"debug"}

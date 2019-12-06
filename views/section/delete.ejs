@@ -4,7 +4,7 @@
   <div class=row>
     <div class="col col-md-12">
 
-      <h2>Confirm deletion of developer</h2>
+      <h2>Confirm deletion of section</h2>
       <br>
       <br> ID: <%=  section._id %>
       <br> sectionNo: <%=section.SectionNumber%>
@@ -14,6 +14,7 @@
       <br> InstructorID: <%=section.InstructorID %>
       <br> courseID: <%=section.CourseID %>
       
+      
       <hr>
       
       <form method="get" action="/section">
@@ -21,7 +22,7 @@
       </form>
 
 
-      <form method="POST" action="/developer/delete/<%= section._id %>">
+      <form method="POST" action="/section/delete/<%= section._id %>">
         <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
       </form>
 

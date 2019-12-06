@@ -16,7 +16,6 @@ const CourseSchema = new mongoose.Schema({
   },
   schoolnumber: {
     type: String,
-    minlength: 5,
     maxlength: 100,
     required: true
    
@@ -41,15 +40,11 @@ const CourseSchema = new mongoose.Schema({
   },
   insummer: {
     type: Boolean,
-   
-    required: true,
-    
+    required: true
   },
   infall: {
     type: Boolean,
-   
-    required: true,
-
+    required: true
   }
 
 })
