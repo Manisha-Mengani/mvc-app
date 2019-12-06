@@ -5,6 +5,7 @@
   "author": "Denise Case",
   "dependencies": {
     "body-parser": "latest",
+    "chalk": "^3.0.0",
     "config": "latest",
     "consolidate": "latest",
     "cookie-parser": "latest",
