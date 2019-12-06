@@ -14,6 +14,7 @@
 const express = require('express')
 const api = express.Router()
 const CourseSchema = require('../models/course.js')
+const find = require('lodash.find')
 const LOG = require('../utils/logger.js')
 const notfoundstring = 'Could not find developer with id='
 
@@ -69,7 +70,7 @@ api.get('/delete/:id', (req, res) => {
     if (err) { return res.end(notfoundstring) }
     LOG.info(`RETURNING VIEW FOR ${JSON.stringify(results)}`)
     res.locals.course = results[0]
-    return res.render('course/delete')
+    return res.render('course/delete.ejs')
   })
 })
 
@@ -154,21 +155,16 @@ api.post('/delete/:id', (req, res) => {
   const id = parseInt(req.params.id)
   LOG.info(`Handling REMOVING ID=${id}`)
 
-  SectionSchema.findOne({ courseId: id }, (err, results) => {
-    if (err) {
-      return res.end(`Invalid course is available with given ID: ${err}`)
-    } else if (results) {
-      return res.end(`Course can't be deleted it is assigined with one/more section`)
-    } else {
+  
       CourseSchema.deleteOne({ _id: id }).setOptions({ single: true }).exec((err, deleted) => {
         if (err) { return res.end(notfoundstring) }
         console.log(`Permanently deleted item ${JSON.stringify(deleted)}`)
         return res.redirect('/course')
       })
-    }
+    
   })
 
-})
+
 
 
 module.exports = api
