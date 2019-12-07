@@ -6,11 +6,7 @@
 - [Demo](https://denisecase.github.io/node-express-mvc-views/)
 - [Source](https://github.com/denisecase/node-express-mvc-views)
 
-## Dev Tools
 
-- Chrome browser
-- Visual Studio Code
-- VS Code Extension: ESLint
 
 ## Group members:
 - Sushmita Rudra [Github link](https://github.com/Sushmita-Rudra)
