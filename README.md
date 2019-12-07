@@ -22,4 +22,4 @@
 
 
 ## References
-- Code references from Dr. Denice Case[https://github.com/denisecase/node-express-mvc-views]
+- Code references from [Dr. Denice Case](https://github.com/denisecase/node-express-mvc-views)
